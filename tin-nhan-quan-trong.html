@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin Nặng Từ Anh... ❤️</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+            margin: 0;
+            padding: 20px 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+        }
+        .card {
+            max-width: 680px;
+            width: 95%;
+            background: white;
+            padding: 50px 40px;
+            border-radius: 25px;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        h1 { 
+            color: #e74c3c; 
+            font-size: 2.5em; 
+            margin-bottom: 25px; 
+        }
+        p { 
+            font-size: 1.32em; 
+            line-height: 1.75; 
+            margin: 18px 0; 
+            text-align: justify; 
+        }
+        .center { text-align: center; }
+        .btn {
+            margin-top: 45px;
+            padding: 15px 40px;
+            font-size: 1.25em;
+            background: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover { 
+            background: #c0392b; 
+            transform: scale(1.05); 
+        }
+        .heart { 
+            font-size: 3.5em; 
+            animation: beat 1.3s infinite; 
+        }
+        @keyframes beat { 
+            0%, 100% { transform: scale(1); } 
+            50% { transform: scale(1.35); } 
+        }
+        .photo { 
+            max-width: 100%; 
+            border-radius: 18px; 
+            margin: 25px 0; 
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+        .page { display: none; }
+        .page.active { display: block; }
+    </style>
+</head>
+<body>
+    <div class="card">
+
+        <!-- Halaman 1: Muốn chia tay + lý do + có người mới -->
+        <div id="page1" class="page active">
+            <h1>Em yêu ơi...</h1>
+            <p>Anh đã ngồi suy nghĩ rất lâu, suốt nhiều ngày trời. Mối quan hệ LDR của chúng ta dù đẹp nhưng gần đây anh cảm thấy ngày càng nặng nề.</p>
+            <p>Khoảng cách xa xôi giữa Indonesia và Việt Nam, chênh lệch múi giờ, cùng với công việc bận rộn của mỗi người khiến anh thường xuyên cảm thấy cô đơn. Anh mệt mỏi vì phải chờ đợi tin nhắn hay cuộc gọi video mà đôi khi đến muộn vì lịch trình.</p>
+            <p>Gần đây anh đã gặp một người ở Batam. Cô ấy là người Indonesia, ở gần anh, và cảm giác dễ chịu hơn khi ở bên nhau. Chúng anh đã thân thiết được một thời gian, và anh thấy cô ấy hợp với cuộc sống hiện tại của anh hơn.</p>
+            <p><strong>Vì vậy, anh muốn chúng ta chia tay.</strong> Anh xin lỗi em, anh biết điều này đột ngột và rất đau lòng. Nhưng anh không muốn lừa dối em nữa.</p>
+            <p style="color: #e74c3c; font-weight: bold;">Anh thực sự xin lỗi vì phải nói ra điều này.</p>
+            <button class="btn" onclick="nextPage(2)">Tiếp tục →</button>
+        </div>
+
+        <!-- Halaman 2: Cảm ơn -->
+        <div id="page2" class="page">
+            <h1>Cảm ơn em rất nhiều...</h1>
+            <p>Cảm ơn em vì tất cả những tháng ngày bên nhau. Dù chúng ta ở hai quốc gia khác nhau, em vẫn luôn cố gắng giữ gìn mối quan hệ này thật tốt.</p>
+            <p>Cảm ơn em đã kiên nhẫn lắng nghe anh kể về những ngày ở Batam, về công việc, về gia đình. Cảm ơn em vì đã chịu thức dậy sớm hay ngủ muộn chỉ để video call với anh.</p>
+            <p>Cảm ơn nụ cười của em, tiếng cười của em, và tất cả những lời ngọt ngào em gửi mỗi ngày. Em đã mang đến cho anh rất nhiều kỷ niệm đẹp mà anh sẽ mãi lưu giữ. Không có em, những ngày của anh chắc chắn sẽ bình thường hơn rất nhiều.</p>
+            <p>Dù bây giờ chúng ta phải chia tay, anh vẫn cảm ơn em từ tận đáy lòng.</p>
+            <button class="btn" onclick="nextPage(3)">Tiếp tục →</button>
+        </div>
+
+        <!-- Halaman 3: Xin lỗi vì không tinh tế -->
+        <div id="page3" class="page">
+            <h1>Anh xin lỗi em...</h1>
+            <p>Điều anh muốn nói xin lỗi chân thành nhất là: tất cả đều là lỗi của anh.</p>
+            <p>Anh thường không tinh tế. Có lúc em buồn hoặc mệt mỏi, anh lại bận rộn với việc riêng và không nhận ra ngay. Anh ít khi hỏi thăm em một cách chu đáo, ít nhớ những ngày quan trọng, và hay trả lời tin nhắn ngắn gọn.</p>
+            <p>Anh biết em xứng đáng được quan tâm nhiều hơn. Em xứng đáng có một người bạn trai luôn ở bên khi em cần, người tinh tế với cảm xúc của em, và khiến em cảm thấy được yêu thương mỗi ngày. Nhưng anh chưa làm tốt được điều đó.</p>
+            <p>Xin lỗi vì anh đã khiến em thất vọng nhiều lần. Xin lỗi vì anh chưa đủ nỗ lực cho một mối quan hệ xa cách như thế này. Anh thực sự hối hận.</p>
+            <button class="btn" onclick="nextPage(4)">Đọc tiếp...</button>
+        </div>
+
+        <!-- Halaman 4: April Fools + Foto + Kết thúc ngọt ngào -->
+        <div id="page4" class="page">
+            <p class="heart">😂😂😂</p>
+            <h1 style="color: #27ae60;">CÁ THÁNG TƯ!!! April Fools nè em!!!</h1>
+            <p class="center">Anh đùa thôi màaaa\~! Anh không muốn chia tay chút nào! Không có bạn gái mới, không có người thứ ba gì hết. Tất cả chỉ là trò đùa cho Ngày Cá Tháng Tư!</p>
+            
+            <!-- GANTI LINK FOTO KAMU DI ĐÂY -->
+            <img src="https://i.imgur.com/GANTI_DENGAN_LINK_FOTO_KAMU.jpg" 
+                 alt="Ảnh anh" class="photo">
+            
+            <p>Anh chỉ muốn tạo bất ngờ vui vẻ để chúng ta cùng cười thôi. Nhưng xin lỗi em nhiều nếu trò đùa này quá đà và làm em buồn hoặc lo lắng. Anh không cố ý làm em tổn thương đâu.</p>
+            <p>Thực ra anh nhớ em kinh khủng. Mỗi ngày anh đều nghĩ về em, về tương lai của chúng ta, và thấy mình may mắn vì có em – cô gái tuyệt vời nhất.</p>
+            <p>Anh hứa sẽ cố gắng tinh tế hơn, hỏi thăm em thường xuyên hơn, và nỗ lực giữ gìn mối quan hệ LDR này. Em là người duy nhất anh yêu. 🇮🇩❤️🇻🇳</p>
+            <p style="margin-top: 35px; font-size: 1.25em; color: #27ae60;">
+                Bây giờ video call anh ngay đi em yêu... Anh đang cười toe toét đây, muốn thấy nụ cười của em và nói "Anh yêu em" trực tiếp! ❤️
+            </p>
+        </div>
+
+    </div>
+
+    <script>
+        function nextPage(page) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.getElementById('page' + page).classList.add('active');
+        }
+    </script>
+</body>
+</html>
